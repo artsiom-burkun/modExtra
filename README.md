@@ -3,7 +3,7 @@
 * Переименовать modxExtension и modxextension во всех фалах пректа
 * Переименовать modxextension во всех директориях проекта
 * Написать сам компонент
-* ЗАпустить сборку проекта:
+* Запустить сборку проекта:
 ``` 
 php ~/www/Extras/anyOtherName/_build/build.php
 ``` 
