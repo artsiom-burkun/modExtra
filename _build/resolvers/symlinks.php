@@ -5,23 +5,23 @@
 if ($transport->xpdo) {
     $modx =& $transport->xpdo;
 
-    $dev = MODX_BASE_PATH . 'Extras/modExtra/';
+    $dev = MODX_BASE_PATH . 'Extras/modxExtension/';
     /** @var xPDOCacheManager $cache */
     $cache = $modx->getCacheManager();
     if (file_exists($dev) && $cache) {
-        if (!is_link($dev . 'assets/components/modextra')) {
+        if (!is_link($dev . 'assets/components/modxextension')) {
             $cache->deleteTree(
-                $dev . 'assets/components/modextra/',
+                $dev . 'assets/components/modxextension/',
                 ['deleteTop' => true, 'skipDirs' => false, 'extensions' => []]
             );
-            symlink(MODX_ASSETS_PATH . 'components/modextra/', $dev . 'assets/components/modextra');
+            symlink(MODX_ASSETS_PATH . 'components/modxextension/', $dev . 'assets/components/modxextension');
         }
-        if (!is_link($dev . 'core/components/modextra')) {
+        if (!is_link($dev . 'core/components/modxextension')) {
             $cache->deleteTree(
-                $dev . 'core/components/modextra/',
+                $dev . 'core/components/modxextension/',
                 ['deleteTop' => true, 'skipDirs' => false, 'extensions' => []]
             );
-            symlink(MODX_CORE_PATH . 'components/modextra/', $dev . 'core/components/modextra');
+            symlink(MODX_CORE_PATH . 'components/modxextension/', $dev . 'core/components/modxextension');
         }
     }
 }

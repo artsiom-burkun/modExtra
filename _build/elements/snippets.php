@@ -1,13 +1,13 @@
 <?php
 
 return [
-    'modExtra' => [
-        'file' => 'modextra',
-        'description' => 'modExtra snippet to list items',
+    'modxExtension' => [
+        'file' => 'modxextension',
+        'description' => 'modxExtension snippet to list items',
         'properties' => [
             'tpl' => [
                 'type' => 'textfield',
-                'value' => 'tpl.modExtra.item',
+                'value' => 'tpl.modxExtension.item',
             ],
             'sortby' => [
                 'type' => 'textfield',

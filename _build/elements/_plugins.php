@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'modExtra' => [
-        'file' => 'modextra',
+    'modxExtension' => [
+        'file' => 'modxextension',
         'description' => '',
         'events' => [
             'OnManagerPageInit' => [],
